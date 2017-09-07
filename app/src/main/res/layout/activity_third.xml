@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.unica.unicaquiz1.ThirdActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="BACHELOR OF SCIENCE IN INFORMATION SYSTEMS (4 YEARS)"
+        android:textColor="#ffff22" />
+    <TextView
+        android:id="@+id/etISC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="100dp"
+        android:text="Level I accredited by the Philippine Accrediting Association of Schools, Colleges and Universities"
+        />
+    <TextView
+        android:id="@+id/etISC2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="Students under the BS Information Systems program are trained to handle the managerial side of
+computer related activities. The focus of the program is effective management of resources - people, money, and computer facilities
+especially in areas involving accounting/projections/estimates/feasibility studies, and the like."
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/etISC"
+        android:layout_alignParentLeft="true"
+        />
+    <Button
+        android:id="@+id/etCS"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#4169e1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etISC2"
+        android:layout_alignRight="@id/etISC2"
+        android:text="CS Program"
+        android:onClick="callSecondActivity"/>
+    <Button
+        android:id="@+id/etIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#6b8e23"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="90dp"
+        android:layout_below="@id/etISC2"
+        android:layout_centerHorizontal="true"
+        android:text="IT Program"
+        android:onClick="callFourthActivity"/>
+    <Button
+        android:id="@+id/etHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/etISC2"
+        android:layout_alignLeft="@id/etISC2"
+        android:text="Home"
+        android:onClick="goHome"/>
+</RelativeLayout>

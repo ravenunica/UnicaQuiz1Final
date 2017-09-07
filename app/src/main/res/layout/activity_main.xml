@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.unica.unicaquiz1.MainActivity">
+
+
+    <Button
+        android:id="@+id/etCS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B.S. Computer Science"
+        android:textColor="#4169e1"
+        android:layout_centerInParent="true"
+        android:onClick="callSecondActivity"/>
+    <Button
+        android:id="@+id/etIS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B.S. Information Systems"
+        android:textColor="#d2691e"
+        android:layout_below="@id/etCS"
+        android:layout_centerInParent="true"
+        android:onClick="callThirdActivity"/>
+    <Button
+        android:id="@id/etIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#6b8e23"
+        android:text="B.S. Information Technology"
+        android:layout_below="@id/etIS"
+        android:layout_centerInParent="true"
+        android:onClick="callFourthActivity"/>
+
+</RelativeLayout>

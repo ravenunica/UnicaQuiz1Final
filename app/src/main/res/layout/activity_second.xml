@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.unica.unicaquiz1.SecondActivity"
+    >
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="BACHELOR OF SCIENCE IN COMPUTER SCIENCE (4 YEARS)"
+        android:textColor="#FFFF22"/>
+    <TextView
+        android:id="@+id/etCSC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="100dp"
+        android:text="Level I accredited by the Philippine Accrediting Association of Schools, Colleges and Universities"
+        />
+    <TextView
+        android:id="@+id/etCSC2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etCSC"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:text="Students under the BS Computer Science program are highly trained for software and system development.
+The program;s main focus is to expose the students to different approaches and styles in developing programs whether they are
+procedural or the object oriented type system approach."
+        />
+    <Button
+        android:id="@+id/etIS"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#d2691e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etCSC2"
+        android:layout_alignRight="@id/etCSC2"
+        android:text="IS Program"
+        android:onClick="callThirdActivity"/>
+    <Button
+        android:id="@id/etIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="90dp"
+        android:textColor="#6b8e23"
+        android:layout_below="@id/etCSC2"
+        android:layout_centerHorizontal="true"
+        android:text="IT Program"
+        android:onClick="callFourthActivity"/>
+    <Button
+        android:id="@id/etHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/etCSC2"
+        android:layout_alignLeft="@id/etCSC2"
+        android:text="Home"
+        android:onClick="goHome"/>
+
+</RelativeLayout>
